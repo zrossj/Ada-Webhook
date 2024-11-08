@@ -19,7 +19,7 @@ with engine.connect() as conn:
     try: 
         conn.execute(
             text(
-                """drop table customer_mail; 
+                """drop table if exists customer_mail; 
                 create table 
             customer_mail  (
             name varchar(64), 
@@ -43,7 +43,7 @@ with engine.connect() as conn:
     try:
         conn.execute(
             text(
-                """drop table fx_price_collected;
+                """drop table if exists fx_price_collected;
                 create table fx_price_collected (
             coin char(6),
             date timestamp,
