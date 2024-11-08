@@ -107,8 +107,8 @@ def main():
 
     if request.method == 'GET': # we will just display some instructions
 
-        return jsonify({"message": """Hello, this is the route to webhook. Use 
-                        POST to send us your e-mail address and the coin you want to
+        return jsonify({"message": """Hello, this is the route to webhook. Use \
+                        POST to send us your e-mail address and the coin you want to \
                         receive updates""",
                         'Tutorial': 'Use type: include for subscrib to our warnings'})
 
